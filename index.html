@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>   
+*body
+{
+    display: inline-block;
+}
+body
+{
+    margin:0px;
+    padding: 0px;
+}
+#ln
+{
+    color:darkorange;
+}
+h1,h3
+{
+    font-size:2vw;
+}
+#li
+{
+    opacity:.7;
+    font-size:1.5vw;
+}
+.side
+{
+    position: fixed;
+    display: inline-block;
+    width:28vw;
+    background:darkorange;
+    float: left;
+    height:41em;
+}
+.side ul
+{
+    position: absolute;
+    top:22vw;
+    left:0vw;
+    list-style-type: none;
+}
+.side ul li a
+{
+    text-decoration: none;
+    color:black;
+    font-size:3.5vw;
+}
+.side ul li a:hover{
+    color:#f1f1f1;
+}
+img.img1
+{
+    position: absolute;
+    top:2vw;
+    left:2vw;
+    height:18vw;
+    width:18vw;
+    border-radius: 12vw;
+}
+.about
+{
+    position: absolute;
+    top:35%;
+    left:35%;
+    display: inline-block;
+    width:65%;
+    float: left;
+}
+#im
+{
+    height:10.5vw;
+    width:10.5vw;
+    border-radius:6vw;
+}
+.container
+{
+    height:15vw;
+    width:15vw;
+    border:5px solid;
+    box-sizing: border-box;
+    margin:20px;
+    box-shadow:.5vw 1vw grey;
+    display: inline-block;
+}
+.container h3
+{
+    position: relative;
+    color:fuchsia;
+    
+}
+.container div
+{
+    padding-left:25vw;
+}
+.logo
+{
+    height:5.5vw;
+    width: 5.5vw;
+}
+        </style>
+        <title>Home</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="side">
+                <img src="pp.jpg" class="img1">
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#skill">SKILLS</a></li>
+                    <li><a href="#">EDUCATION</a></li>
+                    <li><a href="#">EXPERIENCE</a></li>
+                    <li><a href="#">INTERESTS</a></li>
+                    <li><a href="#">AWARDS</a></li>
+                </ul>
+            </div>
+            <div class="about">
+                <h3 id="li">HI THERE! I'M</h3>
+                <h1><span id="fn">HALDHAR </span><span id="ln">DWIVEDI</span></h1>
+                <h3>A Computer science UnderGrad At IIITDM Kancheepuram</h3>
+                <div class="social">
+                    <a href="#"><img src="insta.png" id="im"></a>
+                    <a href="#"><img src="twitter-logo.png" id="im"></a>
+                    <a href="#"><img src="GitHub-Mark.png" id="im"></a>
+                </div>
+                <br>
+                <br>
+                <h1 color="blue" id="skill">SKILLS</h1>
+                <div class="skill" >
+                <div class="container">
+                    <img src="logo.png" class="logo">
+                    <h3>Web Developement</h3>
+                </div>
+                    <div class="container">
+                    <img src="light.png" class="logo">
+                    <h3>Competetive Programming</h3>
+                </div>
+                    <div class="container">
+                    <img src="pen.png" class="logo">
+                    <h3>Technical Writing</h3>
+                </div>
+                    <div class="container">
+                    <img src="blog.png" class="logo">
+                    <h3>Blogging</h3>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
