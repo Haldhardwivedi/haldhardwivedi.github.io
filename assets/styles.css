@@ -286,10 +286,14 @@ body {
     box-shadow: 0 3px 12px rgba(37, 99, 235, 0.23) !important;
 }
 
-.dark-mode .icon,
-.dark-mode .leetcode-icon {
+.dark-mode .icon{
     background: #23272f !important;
     border-color: #23272f !important;
+}
+
+.dark-mode .leetcode-icon {
+    background: #fff !important;
+    border-color: transparent !important;
 }
 .dark-mode .github-icon {
     background: #fff !important;
