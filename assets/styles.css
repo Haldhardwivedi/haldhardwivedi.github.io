@@ -115,9 +115,9 @@ body {
 
 .leetcode-icon {
     background: #fff;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 1px;
-    border: 1px solid #e0e7ef;
+    border: 2px solid #e0e7ef;
 }
 
 .about-section {
@@ -348,19 +348,25 @@ body {
 
 /* Optional: style the toggle button in light mode for consistency */
 #theme-toggle {
-    background: #f3f6fa;
+    background: #fff;
     color: #2563eb;
     border: 1px solid #e0e7ef;
-    border-radius: 5px;
-    padding: 7px 14px;
+    border-radius: 6px;
+    padding: 6px 14px;
     font-size: 0.97rem;
     font-weight: 600;
     cursor: pointer;
     transition: background 0.18s, color 0.18s, border 0.18s;
-    margin-top: 10px;
+    margin-top: 0;
+    align-self: flex-end;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
 }
 #theme-toggle:hover {
     background: #e0e7ef;
     color: #1e40af;
     border-color: #2563eb;
 }
+
