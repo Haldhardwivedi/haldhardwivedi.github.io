@@ -1,0 +1,366 @@
+/* assets/styles.css */
+
+/* Import modern, high-quality fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+    font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #23272f;
+    letter-spacing: 0.01em;
+    font-size: 0.92rem; /* smaller */
+    line-height: 1.5;   /* slightly tighter */
+}
+
+.profile-main {
+    max-width: 420px; /* smaller card */
+    margin: 32px auto 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 28px rgba(60, 72, 88, 0.13), 0 1.5px 4px rgba(60, 72, 88, 0.07);
+    padding: 32px 18px 22px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e4e8f0;
+}
+
+.profile-photo {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e0e7ef;
+    margin-bottom: 18px;
+    box-shadow: 0 3px 12px rgba(60, 72, 88, 0.13);
+    transition: box-shadow 0.2s;
+}
+.profile-photo:hover {
+    box-shadow: 0 7px 20px rgba(37, 99, 235, 0.13);
+}
+
+.profile-name {
+    font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+    font-size: 1.25rem; /* smaller */
+    font-weight: 600;
+    margin: 0 0 7px 0;
+    color: #1a2233;
+    letter-spacing: 0.7px;
+    text-shadow: 0 1px 0 #f3f6fa;
+}
+
+.profile-title {
+    font-size: 1rem; /* smaller */
+    color: #4b5563;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: 'Inter', Arial, sans-serif;
+    letter-spacing: 0.2px;
+}
+
+.profile-email a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.97rem;
+    font-weight: 500;
+    transition: color 0.2s;
+    border-bottom: 1px dotted #2563eb33;
+    padding-bottom: 1.5px;
+}
+.profile-email a:hover {
+    color: #1e40af;
+    text-decoration: underline;
+    border-bottom: 1px solid #1e40af;
+}
+
+.profile-links {
+    display: flex;
+    gap: 13px;
+    margin: 18px 0 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-links a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #374151;
+    background: linear-gradient(90deg, #f3f6fa 70%, #e0e7ef 100%);
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-size: 0.98rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.18s, color 0.18s, box-shadow 0.18s, transform 0.18s;
+    box-shadow: 0 1px 4px rgba(60, 72, 88, 0.07);
+    border: 1px solid #e0e7ef;
+}
+.profile-links a:hover {
+    background: linear-gradient(90deg, #e0e7ef 60%, #dbeafe 100%);
+    color: #2563eb;
+    transform: translateY(-1px) scale(1.04);
+    box-shadow: 0 3px 12px rgba(37, 99, 235, 0.10);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.leetcode-icon {
+    background: #fff;
+    border-radius: 3px;
+    padding: 1px;
+    border: 1px solid #e0e7ef;
+}
+
+.about-section {
+    width: 100%;
+    margin-top: 26px;
+    background: linear-gradient(120deg, #f8fafc 80%, #e0e7ef 100%);
+    border-radius: 12px;
+    padding: 16px 12px 12px 12px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(60, 72, 88, 0.07);
+    border: 1px solid #e0e7ef;
+}
+
+.about-title {
+    font-size: 1.08rem;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: #1a2233;
+    letter-spacing: 0.3px;
+    font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+}
+
+.about-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 0.98rem;
+    color: #374151;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.about-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    border-bottom: 1px dotted #2563eb33;
+    padding-bottom: 1.5px;
+}
+.about-link:hover {
+    color: #1e40af;
+    text-decoration: underline;
+    border-bottom: 1px solid #1e40af;
+}
+
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.97rem;
+    margin-top: 10px;
+    box-shadow: 0 1px 4px rgba(37, 99, 235, 0.10);
+    transition: background 0.18s, box-shadow 0.18s, transform 0.18s;
+    letter-spacing: 0.1px;
+}
+.resume-btn:hover {
+    background: #1e40af;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.13);
+    transform: translateY(-1px) scale(1.02);
+}
+
+.last-updated {
+    margin-top: 18px;
+    font-size: 0.93rem;
+    color: #6b7280;
+    text-align: center;
+    letter-spacing: 0.12px;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .profile-main {
+        padding: 10px 2vw 10px 2vw;
+        max-width: 99vw;
+    }
+    .about-section {
+        padding: 7px 2vw 7px 2vw;
+    }
+    .profile-photo {
+        width: 62px;
+        height: 62px;
+    }
+    .profile-name {
+        font-size: 1.08rem;
+    }
+    .about-title {
+        font-size: 0.97rem;
+    }
+    .resume-btn {
+        font-size: 0.92rem;
+        padding: 7px 10px;
+    }
+    .icon {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* Dark mode support */
+.dark-mode {
+    background: #181a1b !important;
+    color: #f3f3f3 !important;
+}
+
+.dark-mode a,
+.dark-mode .about-link {
+    color: #8ecae6 !important;
+}
+
+.dark-mode .profile-main {
+    background: #23272f !important;
+    border-color: #23272f !important;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.23), 0 1.5px 4px rgba(0,0,0,0.17) !important;
+}
+
+.dark-mode .profile-photo {
+    border-color: #23272f !important;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.23) !important;
+}
+
+.dark-mode .profile-photo:hover {
+    box-shadow: 0 7px 20px rgba(37, 99, 235, 0.23) !important;
+}
+
+.dark-mode .profile-name {
+    color: #e0e7ef !important;
+    text-shadow: 0 1px 0 #23272f !important;
+}
+
+.dark-mode .profile-title {
+    color: #bdbdbd !important;
+}
+
+.dark-mode .profile-email a {
+    color: #8ecae6 !important;
+    border-bottom: 1px dotted #8ecae633 !important;
+}
+.dark-mode .profile-email a:hover {
+    color: #48b0f7 !important;
+    border-bottom: 1px solid #48b0f7 !important;
+}
+
+.dark-mode .profile-links a {
+    color: #e0e7ef !important;
+    background: linear-gradient(90deg, #23272f 70%, #181a1b 100%) !important;
+    border-color: #23272f !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.17) !important;
+}
+.dark-mode .profile-links a:hover {
+    background: linear-gradient(90deg, #23272f 60%, #223 100%) !important;
+    color: #8ecae6 !important;
+    box-shadow: 0 3px 12px rgba(37, 99, 235, 0.23) !important;
+}
+
+.dark-mode .icon,
+.dark-mode .leetcode-icon {
+    background: #23272f !important;
+    border-color: #23272f !important;
+}
+.dark-mode .github-icon {
+    background: #fff !important;
+    border-color: transparent !important;
+}
+
+.dark-mode .about-section {
+    background: linear-gradient(120deg, #23272f 80%, #181a1b 100%) !important;
+    border-color: #23272f !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.17) !important;
+}
+
+.dark-mode .about-title {
+    color: #e0e7ef !important;
+}
+
+.dark-mode .about-item {
+    color: #bdbdbd !important;
+}
+
+.dark-mode .about-link {
+    color: #8ecae6 !important;
+    border-bottom: 1px dotted #8ecae633 !important;
+}
+.dark-mode .about-link:hover {
+    color: #48b0f7 !important;
+    border-bottom: 1px solid #48b0f7 !important;
+}
+
+.dark-mode .resume-btn {
+    background: #8ecae6 !important;
+    color: #181a1b !important;
+    box-shadow: 0 1px 4px rgba(37, 99, 235, 0.23) !important;
+}
+.dark-mode .resume-btn:hover {
+    background: #48b0f7 !important;
+    color: #181a1b !important;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.33) !important;
+}
+
+.dark-mode .last-updated {
+    color: #bdbdbd !important;
+}
+
+.dark-mode #theme-toggle {
+    background: #23272f !important;
+    color: #8ecae6 !important;
+    border: 1px solid #444 !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.17) !important;
+}
+.dark-mode #theme-toggle:hover {
+    background: #181a1b !important;
+    color: #48b0f7 !important;
+    border-color: #8ecae6 !important;
+}
+
+/* Optional: style the toggle button in light mode for consistency */
+#theme-toggle {
+    background: #f3f6fa;
+    color: #2563eb;
+    border: 1px solid #e0e7ef;
+    border-radius: 5px;
+    padding: 7px 14px;
+    font-size: 0.97rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s, border 0.18s;
+    margin-top: 10px;
+}
+#theme-toggle:hover {
+    background: #e0e7ef;
+    color: #1e40af;
+    border-color: #2563eb;
+}
