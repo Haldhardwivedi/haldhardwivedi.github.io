@@ -17,11 +17,3 @@ git clone https://github.com/haldhardwivedi/haldhardwivedi.github.io.git
 cd haldhardwivedi.github.io
 # Open index.html in your browser
 ```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first.
-
-## License
-
-[MIT](LICENSE)
